@@ -614,7 +614,7 @@ export default function Index() {
           style={{ backgroundImage: "url('/hero-bg.jpg')" }}
         />
 
-        <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-12">
+        <div className="relative z-30 max-w-7xl mx-auto px-6 md:px-12">
 
           {/* ================= HEADING ================= */}
           <h2
