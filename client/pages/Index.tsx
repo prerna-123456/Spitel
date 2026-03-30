@@ -197,9 +197,14 @@ export default function Index() {
   const [active, setActive] = useState(1);
 
   const images = [
-    "/graphic4.jpeg",
-    "/graphic2.jpg",
-    "/graphic3.jpg",
+    "/poster8(1).jpeg",
+    "/poster2(1).jpeg",
+    "/poster3(1).jpeg",
+    "/poster4.jpeg",
+    "/poster5.jpeg",
+    "/poster6(1).jpeg",
+    "/poster7.jpeg",
+    "/poster1.jpeg",
   ];
 
   useEffect(() => {
@@ -211,10 +216,13 @@ export default function Index() {
   }, []);
 
   const getPosition = (index) => {
+    const total = images.length;
+
     if (index === active) return "center";
-    if (index === (active - 1 + images.length) % images.length)
-      return "left";
-    return "right";
+    if (index === (active - 1 + total) % total) return "left";
+    if (index === (active + 1) % total) return "right";
+
+    return "hidden";
   };
 
   const sectionRef6 = useRef(null);
@@ -1007,20 +1015,25 @@ export default function Index() {
                   <div
                     key={index}
                     className={`
-                      absolute rounded-2xl overflow-hidden 
-                      transition-all duration-700 ease-in-out
+                    absolute rounded-2xl overflow-hidden 
+                    transition-all duration-700 ease-in-out
+                    flex items-center justify-center
 
-                      ${position === "center"
-                        ? "w-[260px] md:w-[369px] h-[380px] md:h-[455px] z-30 translate-x-0"
+                    w-[260px] md:w-[329px] h-[380px] md:h-[405px]
+
+                    ${position === "center"
+                        ? "z-30 translate-x-0 scale-100"
                         : position === "left"
-                          ? "w-[200px] md:w-[210px] h-[240px] md:h-[264px] z-20 -translate-x-[200px] md:-translate-x-[314px]"
-                          : "w-[200px] md:w-[210px] h-[240px] md:h-[264px] z-20 translate-x-[200px] md:translate-x-[314px]"
+                          ? "z-20 -translate-x-[200px] md:-translate-x-[314px] scale-75"
+                          : position === "right"
+                            ? "z-20 translate-x-[200px] md:translate-x-[314px] scale-75"
+                            : "opacity-0 scale-50 z-10"
                       }
                     `}
                   >
                     <img
                       src={src}
-                      className="w-full h-full object-cover"
+                      className="w-full h-full object-cover transition-none duration-700"
                       alt=""
                     />
                   </div>
@@ -1040,16 +1053,16 @@ export default function Index() {
         <div className="absolute
           bottom-[70px] md:bottom-[210px]   /* mobile adjust only */
           left-1/2 md:left-auto
-          md:right-[500px]
+          md:right-[480px]
           -translate-x-1/2 md:translate-x-0
           flex gap-3 z-40">
 
-          {images.map((_, index) => (
+          {images.slice(0, 3).map((_, index) => (
             <div
               key={index}
               className={`h-3 w-3 rounded-full transition-all duration-300
-                ${active === index ? "bg-[#04D78D] scale-125" : "bg-gray-500"}
-              `}
+              ${active % 3 === index ? "bg-[#04D78D] scale-125" : "bg-gray-500"}
+            `}
             />
           ))}
         </div>
@@ -1401,15 +1414,15 @@ export default function Index() {
               <a href="https://auctionzo.com/"
                 target="_blank"
                 rel="noopener noreferrer">
-              <button
-                className={`px-6 py-3 rounded-full border-[3px] border-[#04D78D]
+                <button
+                  className={`px-6 py-3 rounded-full border-[3px] border-[#04D78D]
               text-[#04D78D] text-[15px] sm:text-[16px]
               font-montserrat font-medium mt-8 md:mt-10 ml-6 md:ml-0
               bg-transparent transition-colors
               ${showSection10 ? "animate-fadeUpGlow" : "opacity-0"}`}
-              >
-                View Site
-              </button>
+                >
+                  View Site
+                </button>
               </a>
             </div>
 
@@ -1694,7 +1707,7 @@ export default function Index() {
               bg-white text-[#024F7E] font-montserrat font-semibold
               rounded-full overflow-visible text-sm md:text-base"
               >
-                <BiRightArrow className="text-[16px] md:text-[16px]"/> Get Free Strategy Call
+                <BiRightArrow className="text-[16px] md:text-[16px]" /> Get Free Strategy Call
 
                 {/* LEFT – Layer 1 */}
                 <span className="absolute left-0 top-1/2 -translate-y-1/2
