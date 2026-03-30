@@ -1019,7 +1019,7 @@ export default function Index() {
                     transition-all duration-700 ease-in-out
                     flex items-center justify-center
 
-                    w-[260px] md:w-[329px] h-[380px] md:h-[405px]
+                    w-[280px] md:w-[329px] h-[360px] md:h-[405px]
 
                     ${position === "center"
                         ? "z-30 translate-x-0 scale-100"
@@ -1029,7 +1029,7 @@ export default function Index() {
                             ? "z-20 translate-x-[200px] md:translate-x-[314px] scale-75"
                             : "opacity-0 scale-50 z-10"
                       }
-                    `}
+                  `}
                   >
                     <img
                       src={src}
