@@ -7,6 +7,7 @@ import { FaBars, FaTimes } from "react-icons/fa";
 import {
   FaInstagram,
   FaFacebookF,
+  FaWhatsapp,
   FaLinkedinIn,
 } from "react-icons/fa";
 
@@ -32,21 +33,20 @@ export default function GraphicDesigning() {
   const [transition, setTransition] = useState(true);
 
   useEffect(() => {
-  const autoSlide = setInterval(() => {
-    nextSlide();
-  }, 2000); // 2 seconds
+    const autoSlide = setInterval(() => {
+      nextSlide();
+    }, 2000); // 2 seconds
 
-  return () => clearInterval(autoSlide);
-}, []);
+    return () => clearInterval(autoSlide);
+  }, []);
 
   useEffect(() => {
     setLoaded(true);
 
     const updateSlider = () => {
       if (window.innerWidth < 768) {
-        // 📱 Mobile
         setVisibleCount(1);
-        setImageWidth(window.innerWidth); // full width
+        setImageWidth(window.innerWidth);
         setIndex(1);
       } else {
         // 💻 Desktop (UNCHANGED)
@@ -262,8 +262,8 @@ export default function GraphicDesigning() {
             </span>
           </h2>
 
-           <p className="md:text-[16px] text-[#B1B1B1] font-montserrat font-medium text-center mt-4 md:mt-4 animate-slideInTogether">
-            We develop structured design systems and creative assets that reflect your brand values while <br className="hidden md:block"/>
+          <p className="md:text-[16px] text-[#B1B1B1] font-montserrat font-medium text-center mt-4 md:mt-4 animate-slideInTogether">
+            We develop structured design systems and creative assets that reflect your brand values while <br className="hidden md:block" />
             maintaining clarity and consistency across platforms and campaigns.
           </p>
 
@@ -298,10 +298,10 @@ export default function GraphicDesigning() {
               </button>
 
               {/* SLIDER */}
-              <div className="overflow-hidden w-full md:w-[1300px] px-10 md:px-0">
+              <div className="overflow-hidden w-full md:w-[1300px] px-0 md:px-0">
                 <div
-                  className={`flex gap-28 md:gap-8 ${transition ? "transition-transform duration-500 ease-in-out" : ""
-                    }`}
+                  className={`flex ${transition ? "transition-transform duration-500 ease-in-out" : ""
+                    } gap-8 md:gap-8`}
                   style={{
                     transform: `translateX(-${index * imageWidth}px)`
                   }}
@@ -323,7 +323,10 @@ export default function GraphicDesigning() {
                         key={i}
                         src={img}
                         alt="poster"
-                        className={`w-[280px] md:w-[300px] h-[380px] md:h-[413px] ml-3 mr-2 md:ml-0 md:mr-0 rounded-xl object-cover flex-shrink-0 ${animationClass}`}
+                        className={`w-full md:w-[300px] h-[550px] md:h-[413px] rounded-xl object-cover flex-shrink-0 ${animationClass}`}
+                        style={{
+                          width: window.innerWidth < 768 ? `${imageWidth}px` : "300px",
+                        }}
                       />
                     );
                   })}
@@ -428,7 +431,7 @@ export default function GraphicDesigning() {
           </h2>
 
           <p className="text-[#B1B1B1] text-[16px] md:text-[16px] mb-10 md:mb-14 max-w-2xl mx-auto font-montserrat">
-            Contact our team to discuss your requirements and receive a tailored <br /> 
+            Contact our team to discuss your requirements and receive a tailored <br />
             marketing plan.
           </p>
 
@@ -437,33 +440,33 @@ export default function GraphicDesigning() {
 
             {/* Primary Button */}
             <a href="/contact-us">
-            <button
-              className="relative flex-1 sm:flex-none flex items-center gap-3 px-8 md:px-10 py-2 md:py-4
+              <button
+                className="relative flex-1 sm:flex-none flex items-center gap-3 px-8 md:px-10 py-2 md:py-4
               bg-white text-[#024F7E] font-montserrat font-semibold
               rounded-full overflow-visible text-sm md:text-base"
-            >
-              <BiRightArrow className="text-[16px] md:text-[16px]"/> Get Free Strategy Call
+              >
+                <BiRightArrow className="text-[16px] md:text-[16px]" /> Get Free Strategy Call
 
-              {/* LEFT – Layer 1 */}
-              <span className="absolute left-0 top-1/2 -translate-y-1/2
+                {/* LEFT – Layer 1 */}
+                <span className="absolute left-0 top-1/2 -translate-y-1/2
               w-full h-full rounded-full bg-[#656565]
               animate-leftLayer1 -z-10"></span>
 
-              {/* LEFT – Layer 2 */}
-              <span className="absolute left-0 top-1/2 -translate-y-1/2
+                {/* LEFT – Layer 2 */}
+                <span className="absolute left-0 top-1/2 -translate-y-1/2
               w-full h-full rounded-full bg-[#565656]
               animate-leftLayer2 -z-20"></span>
 
-              {/* RIGHT – Layer 1 */}
-              <span className="absolute right-0 top-1/2 -translate-y-1/2
+                {/* RIGHT – Layer 1 */}
+                <span className="absolute right-0 top-1/2 -translate-y-1/2
               w-full h-full rounded-full bg-[#656565]
               animate-rightLayer1 -z-10"></span>
 
-              {/* RIGHT – Layer 2 */}
-              <span className="absolute right-0 top-1/2 -translate-y-1/2
+                {/* RIGHT – Layer 2 */}
+                <span className="absolute right-0 top-1/2 -translate-y-1/2
               w-full h-full rounded-full bg-[#565656]
               animate-rightLayer2 -z-20"></span>
-            </button>
+              </button>
             </a>
 
             {/* Secondary Button */}
@@ -478,7 +481,7 @@ export default function GraphicDesigning() {
                 [animation-delay:0.8s]
                 transition-colors"
               >
-                Mail Us <MdMailOutline className="text-[22px] md:text-[16px]"/>
+                Mail Us <MdMailOutline className="text-[22px] md:text-[16px]" />
               </button>
             </a>
           </div>
@@ -492,8 +495,8 @@ export default function GraphicDesigning() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-black px-6 md:px-16 py-10 md:py-6">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
+      <footer className="bg-black px-6 md:px-16 py-10 md:py-8">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-12 md:mt-14">
 
           {/* Logo + Tagline */}
           <div className="text-center md:text-left">
@@ -505,7 +508,7 @@ export default function GraphicDesigning() {
               />
             </a>
             <p className="text-[#8D8D8D] text-[15px] md:text-[16px] font-montserrat leading-relaxed 
-                  mx-auto md:ml-16 md:-mt-4">
+                              mx-auto md:ml-16 md:-mt-4">
               Crafting impactful digital<br />
               brand experiences.
             </p>
@@ -541,7 +544,7 @@ export default function GraphicDesigning() {
           </div>
 
           {/* Address */}
-          <div className="text-center md:text-left">
+          <div className="text-center md:text-left md:-ml-12">
             <h4 className="text-[#FFFFFF] font-montserrat font-medium text-[16px] mb-6 md:mb-8">
               Address
             </h4>
@@ -578,7 +581,7 @@ export default function GraphicDesigning() {
               Get In Touch With Us
             </h4>
 
-            <div className="flex justify-center md:justify-center md:mr-[120px] flex-wrap gap-6 text-[#D2D2D2] text-[26px] md:text-[30px] max-w-[220px] mx-auto md:mx-0">
+            <div className="flex justify-center md:justify-start flex-wrap gap-6 text-[#D2D2D2] text-[26px] md:text-[30px] max-w-[220px] mx-auto md:mx-0">
 
               <a href="https://www.instagram.com/spitel_insta/" target="_blank" rel="noopener noreferrer">
                 <FaInstagram className="cursor-pointer hover:text-[#04D78D]" />
@@ -588,9 +591,22 @@ export default function GraphicDesigning() {
                 <FaFacebookF className="cursor-pointer hover:text-[#04D78D]" />
               </a>
 
+              <a href="https://wa.me/917892059939" target="_blank" rel="noopener noreferrer">
+                <FaWhatsapp className="cursor-pointer hover:text-[#04D78D]" />
+              </a>
+
+              {/* <a href="https://twitter.com/yourusername" target="_blank" rel="noopener noreferrer">
+                                  <FaTwitter className="cursor-pointer hover:text-[#04D78D]" />
+                                </a> */}
+
               <a href="https://www.linkedin.com/company/spitel/?originalSubdomain=in" target="_blank" rel="noopener noreferrer">
                 <FaLinkedinIn className="cursor-pointer hover:text-[#04D78D]" />
               </a>
+
+              {/* <a href="https://t.me/yourusername" target="_blank" rel="noopener noreferrer">
+                                  <FaTelegramPlane className="cursor-pointer hover:text-[#04D78D]" />
+                                </a> */}
+
             </div>
           </div>
         </div>

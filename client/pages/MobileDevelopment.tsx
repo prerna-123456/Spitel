@@ -6,6 +6,7 @@ import { FaBars, FaTimes } from "react-icons/fa";
 import {
   FaInstagram,
   FaFacebookF,
+  FaWhatsapp,
   FaLinkedinIn,
 } from "react-icons/fa";
 
@@ -171,9 +172,9 @@ export default function MobileDevelopment() {
           </p>
 
           <p className="mt-4 md:mt-10 md:ml-16 text-[#B1B1B1] md:text-[16px] font-montserrat font-medium animate-slideLeftFade">
-             We design and develop secure, scalable mobile applications tailored to your business goals. <br className="hidden md:block"/>
-             From intuitive user interfaces to robust backend systems, our apps are built to perform reliably, <br className="hidden md:block"/>
-             integrate seamlessly, and support long-term growth.
+            We design and develop secure, scalable mobile applications tailored to your business goals. <br className="hidden md:block" />
+            From intuitive user interfaces to robust backend systems, our apps are built to perform reliably, <br className="hidden md:block" />
+            integrate seamlessly, and support long-term growth.
           </p>
 
           {/* PHONES SECTION */}
@@ -277,7 +278,7 @@ export default function MobileDevelopment() {
           </h2>
 
           <p className="text-[#B1B1B1] text-[16px] md:text-[16px] mb-10 md:mb-14 max-w-2xl mx-auto font-montserrat">
-            Contact our team to discuss your requirements and receive a tailored <br /> 
+            Contact our team to discuss your requirements and receive a tailored <br />
             marketing plan.
           </p>
 
@@ -286,33 +287,33 @@ export default function MobileDevelopment() {
 
             {/* Primary Button */}
             <a href="/contact-us">
-            <button
-              className="relative flex-1 sm:flex-none flex items-center gap-3 px-8 md:px-10 py-2 md:py-4
+              <button
+                className="relative flex-1 sm:flex-none flex items-center gap-3 px-8 md:px-10 py-2 md:py-4
               bg-white text-[#024F7E] font-montserrat font-semibold
               rounded-full overflow-visible text-sm md:text-base"
-            >
-              <BiRightArrow className="text-[16px] md:text-[16px]"/> Get Free Strategy Call
+              >
+                <BiRightArrow className="text-[16px] md:text-[16px]" /> Get Free Strategy Call
 
-              {/* LEFT – Layer 1 */}
-              <span className="absolute left-0 top-1/2 -translate-y-1/2
+                {/* LEFT – Layer 1 */}
+                <span className="absolute left-0 top-1/2 -translate-y-1/2
               w-full h-full rounded-full bg-[#656565]
               animate-leftLayer1 -z-10"></span>
 
-              {/* LEFT – Layer 2 */}
-              <span className="absolute left-0 top-1/2 -translate-y-1/2
+                {/* LEFT – Layer 2 */}
+                <span className="absolute left-0 top-1/2 -translate-y-1/2
               w-full h-full rounded-full bg-[#565656]
               animate-leftLayer2 -z-20"></span>
 
-              {/* RIGHT – Layer 1 */}
-              <span className="absolute right-0 top-1/2 -translate-y-1/2
+                {/* RIGHT – Layer 1 */}
+                <span className="absolute right-0 top-1/2 -translate-y-1/2
               w-full h-full rounded-full bg-[#656565]
               animate-rightLayer1 -z-10"></span>
 
-              {/* RIGHT – Layer 2 */}
-              <span className="absolute right-0 top-1/2 -translate-y-1/2
+                {/* RIGHT – Layer 2 */}
+                <span className="absolute right-0 top-1/2 -translate-y-1/2
               w-full h-full rounded-full bg-[#565656]
               animate-rightLayer2 -z-20"></span>
-            </button>
+              </button>
             </a>
 
             {/* Secondary Button */}
@@ -327,7 +328,7 @@ export default function MobileDevelopment() {
                 [animation-delay:0.8s]
                 transition-colors"
               >
-                Mail Us <MdMailOutline className="text-[22px] md:text-[16px]"/>
+                Mail Us <MdMailOutline className="text-[22px] md:text-[16px]" />
               </button>
             </a>
           </div>
@@ -341,8 +342,8 @@ export default function MobileDevelopment() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-black px-6 md:px-16 py-10 md:py-6">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
+      <footer className="bg-black px-6 md:px-16 py-10 md:py-8">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-12 md:mt-14">
 
           {/* Logo + Tagline */}
           <div className="text-center md:text-left">
@@ -354,7 +355,7 @@ export default function MobileDevelopment() {
               />
             </a>
             <p className="text-[#8D8D8D] text-[15px] md:text-[16px] font-montserrat leading-relaxed 
-                  mx-auto md:ml-16 md:-mt-4">
+                              mx-auto md:ml-16 md:-mt-4">
               Crafting impactful digital<br />
               brand experiences.
             </p>
@@ -390,7 +391,7 @@ export default function MobileDevelopment() {
           </div>
 
           {/* Address */}
-          <div className="text-center md:text-left">
+          <div className="text-center md:text-left md:-ml-12">
             <h4 className="text-[#FFFFFF] font-montserrat font-medium text-[16px] mb-6 md:mb-8">
               Address
             </h4>
@@ -427,7 +428,7 @@ export default function MobileDevelopment() {
               Get In Touch With Us
             </h4>
 
-            <div className="flex justify-center md:justify-center md:mr-[120px] flex-wrap gap-6 text-[#D2D2D2] text-[26px] md:text-[30px] max-w-[220px] mx-auto md:mx-0">
+            <div className="flex justify-center md:justify-start flex-wrap gap-6 text-[#D2D2D2] text-[26px] md:text-[30px] max-w-[220px] mx-auto md:mx-0">
 
               <a href="https://www.instagram.com/spitel_insta/" target="_blank" rel="noopener noreferrer">
                 <FaInstagram className="cursor-pointer hover:text-[#04D78D]" />
@@ -437,9 +438,22 @@ export default function MobileDevelopment() {
                 <FaFacebookF className="cursor-pointer hover:text-[#04D78D]" />
               </a>
 
+              <a href="https://wa.me/917892059939" target="_blank" rel="noopener noreferrer">
+                <FaWhatsapp className="cursor-pointer hover:text-[#04D78D]" />
+              </a>
+
+              {/* <a href="https://twitter.com/yourusername" target="_blank" rel="noopener noreferrer">
+                                  <FaTwitter className="cursor-pointer hover:text-[#04D78D]" />
+                                </a> */}
+
               <a href="https://www.linkedin.com/company/spitel/?originalSubdomain=in" target="_blank" rel="noopener noreferrer">
                 <FaLinkedinIn className="cursor-pointer hover:text-[#04D78D]" />
               </a>
+
+              {/* <a href="https://t.me/yourusername" target="_blank" rel="noopener noreferrer">
+                                  <FaTelegramPlane className="cursor-pointer hover:text-[#04D78D]" />
+                                </a> */}
+
             </div>
           </div>
         </div>

@@ -5,6 +5,7 @@ import { FaBars, FaTimes } from "react-icons/fa";
 import {
   FaInstagram,
   FaFacebookF,
+  FaWhatsapp,
   FaLinkedinIn,
 } from "react-icons/fa";
 export default function WebDesign() {
@@ -112,7 +113,7 @@ export default function WebDesign() {
         <div className="max-w-8xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12">
 
           {/* LEFT SIDE */}
-          <div className="md:col-span-2 md:ml-36">
+          <div className="md:col-span-2 md:ml-[108px]">
 
             <h2 className="text-[38px] sm:text-4xl md:text-[50px] font-montserrat font-bold mb-8 md:mb-10 md:-ml-14 animate-slideLeftFade">
               Modern Web Design Trends
@@ -120,7 +121,7 @@ export default function WebDesign() {
 
             {/* Big Image */}
             <img
-              src="/web-hosting.jpg"
+              src="/web-hosting.png"
               alt="Blog Featured"
               className="w-full h-[250px] sm:h-[350px] md:h-[550px] object-cover rounded-xl md:-ml-14 animate-slideLeftFade"
             />
@@ -224,7 +225,7 @@ export default function WebDesign() {
           </div>
 
           {/* RIGHT SIDE */}
-          <div className="space-y-8 md:mr-16 md:mt-20 animate-fadeRight">
+          <div className="lg:sticky lg:top-24 h-fit space-y-8 md:mr-16 md:mt-20 animate-fadeRight">
 
             {/* RECENT CARD */}
             <div className="bg-[#111111] p-6 rounded-xl shadow-xl">
@@ -272,14 +273,13 @@ export default function WebDesign() {
 
                 <button className="w-full bg-black hover:bg-[#1a1a1a] flex items-center gap-2 px-4 py-2 rounded-lg transition">
                   <IoIosArrowForward />
-                  <span>Web Development</span>
+                  <span>Web & Mobile App</span>
                 </button>
 
                 <button className="w-full bg-black hover:bg-[#1a1a1a] flex items-center gap-2 px-4 py-2 rounded-lg transition">
                   <IoIosArrowForward />
-                  <span>Digital Marketing</span>
+                  <span>Graphic Designing</span>
                 </button>
-
               </div>
             </div>
           </div>
@@ -287,8 +287,8 @@ export default function WebDesign() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-black px-6 md:px-16 py-10 md:py-6">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
+      <footer className="bg-black px-6 md:px-16 py-10 md:py-8">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-12 md:mt-14">
 
           {/* Logo + Tagline */}
           <div className="text-center md:text-left">
@@ -300,7 +300,7 @@ export default function WebDesign() {
               />
             </a>
             <p className="text-[#8D8D8D] text-[15px] md:text-[16px] font-montserrat leading-relaxed 
-                  mx-auto md:ml-16 md:-mt-4">
+                                    mx-auto md:ml-16 md:-mt-4">
               Crafting impactful digital<br />
               brand experiences.
             </p>
@@ -336,7 +336,7 @@ export default function WebDesign() {
           </div>
 
           {/* Address */}
-          <div className="text-center md:text-left">
+          <div className="text-center md:text-left md:-ml-12">
             <h4 className="text-[#FFFFFF] font-montserrat font-medium text-[16px] mb-6 md:mb-8">
               Address
             </h4>
@@ -373,7 +373,7 @@ export default function WebDesign() {
               Get In Touch With Us
             </h4>
 
-            <div className="flex justify-center md:justify-center md:mr-[120px] flex-wrap gap-6 text-[#D2D2D2] text-[26px] md:text-[30px] max-w-[220px] mx-auto md:mx-0">
+            <div className="flex justify-center md:justify-start flex-wrap gap-6 text-[#D2D2D2] text-[26px] md:text-[30px] max-w-[220px] mx-auto md:mx-0">
 
               <a href="https://www.instagram.com/spitel_insta/" target="_blank" rel="noopener noreferrer">
                 <FaInstagram className="cursor-pointer hover:text-[#04D78D]" />
@@ -383,9 +383,22 @@ export default function WebDesign() {
                 <FaFacebookF className="cursor-pointer hover:text-[#04D78D]" />
               </a>
 
+              <a href="https://wa.me/917892059939" target="_blank" rel="noopener noreferrer">
+                <FaWhatsapp className="cursor-pointer hover:text-[#04D78D]" />
+              </a>
+
+              {/* <a href="https://twitter.com/yourusername" target="_blank" rel="noopener noreferrer">
+                                        <FaTwitter className="cursor-pointer hover:text-[#04D78D]" />
+                                      </a> */}
+
               <a href="https://www.linkedin.com/company/spitel/?originalSubdomain=in" target="_blank" rel="noopener noreferrer">
                 <FaLinkedinIn className="cursor-pointer hover:text-[#04D78D]" />
               </a>
+
+              {/* <a href="https://t.me/yourusername" target="_blank" rel="noopener noreferrer">
+                                        <FaTelegramPlane className="cursor-pointer hover:text-[#04D78D]" />
+                                      </a> */}
+
             </div>
           </div>
         </div>

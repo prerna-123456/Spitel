@@ -3,6 +3,7 @@ import { FaBars, FaTimes } from "react-icons/fa";
 import {
   FaInstagram,
   FaFacebookF,
+  FaWhatsapp,
   FaLinkedinIn,
 } from "react-icons/fa";
 
@@ -273,30 +274,38 @@ export default function AboutPage() {
             </div>
 
             {/* RIGHT CONTENT */}
-            <div className={`space-y-10 md:space-y-14 text-gray-300 ml-4 lg:ml-24 mr-4 md:mr-16 text-center lg:text-right transition-all duration-1000
-              ${showSection ? "animate-slideInRight opacity-100" : "opacity-0 translate-x-[50px]"}`}>
-
-              <div>
-                <h3 className="text-white font-bold font-montserrat text-[26px] md:text-[24px] mb-2">
-                  Scalable & Future <br className="hidden md:block" />
+            <div
+              className={`flex flex-col items-center lg:items-end space-y-16 ml-4 lg:ml-24 mr-4 md:mr-16 transition-all duration-1000
+  ${showSection
+                  ? "animate-slideInRight opacity-100"
+                  : "opacity-0 translate-x-[50px]"
+                }`}
+            >
+              {/* Card 1 */}
+              <div className="w-full max-w-[420px] text-center lg:text-right">
+                <h3 className="text-white font-bold font-montserrat text-[26px] md:text-[24px] leading-tight whitespace-nowrap">
+                  Scalable & Future
+                  <br />
                   Ready Solutions
                 </h3>
-                <p className="text-[16px] md:text-[16px] font-montserrat text-[#B1B1B1]">
-                  Our work is built to grow with your 
-                  business, ensuring long-term 
-                  performance and adaptability.
+
+                <p className="mt-4 text-[16px] font-montserrat text-[#B1B1B1] leading-[1.8] max-w-[300px] ml-auto">
+                  Our work is built to grow with your business,
+                  ensuring long-term performance and adaptability.
                 </p>
               </div>
 
-              <div>
-                <h3 className="text-white font-bold font-montserrat text-[26px] md:text-[24px] mb-2">
-                  Design Meets <br className="hidden md:block" />
+              {/* Card 2 */}
+              <div className="w-full max-w-[420px] text-center lg:text-right">
+                <h3 className="text-white font-bold font-montserrat text-[26px] md:text-[24px] leading-tight whitespace-nowrap">
+                  Design Meets
+                  <br />
                   Functionality
                 </h3>
-                <p className="text-[16px] md:text-[16px] font-montserrat text-[#B1B1B1]">
-                  We balance clean aesthetics with 
-                  strong usability to create impactful 
-                  digital experiences.
+
+                <p className="mt-4 text-[16px] font-montserrat text-[#B1B1B1] leading-[1.8] max-w-[300px] ml-auto">
+                  We balance clean aesthetics with strong usability
+                  to create impactful digital experiences.
                 </p>
               </div>
             </div>
@@ -311,7 +320,7 @@ export default function AboutPage() {
       {/* ================= CONNECT WITH US ================= */}
       <section
         ref={connectRef}
-        className="px-4 md:px-12 lg:px-20 py-10 md:py-20 text-center"
+        className="px-4 md:px-12 lg:px-20 py-16 md:py-20 text-center"
       >
         <h2
           className={`text-[38px] md:text-[59px] font-bold font-montserrat mb-16 transition-all duration-1000
@@ -371,8 +380,8 @@ export default function AboutPage() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-black px-6 md:px-16 py-10 md:py-6">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
+      <footer className="bg-black px-6 md:px-16 py-10 md:py-8">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-12 md:mt-14">
 
           {/* Logo + Tagline */}
           <div className="text-center md:text-left">
@@ -420,7 +429,7 @@ export default function AboutPage() {
           </div>
 
           {/* Address */}
-          <div className="text-center md:text-left">
+          <div className="text-center md:text-left md:-ml-12">
             <h4 className="text-[#FFFFFF] font-montserrat font-medium text-[16px] mb-6 md:mb-8">
               Address
             </h4>
@@ -457,7 +466,7 @@ export default function AboutPage() {
               Get In Touch With Us
             </h4>
 
-            <div className="flex justify-center md:justify-center md:mr-[120px] flex-wrap gap-6 text-[#D2D2D2] text-[26px] md:text-[30px] max-w-[220px] mx-auto md:mx-0">
+            <div className="flex justify-center md:justify-start flex-wrap gap-6 text-[#D2D2D2] text-[26px] md:text-[30px] max-w-[220px] mx-auto md:mx-0">
 
               <a href="https://www.instagram.com/spitel_insta/" target="_blank" rel="noopener noreferrer">
                 <FaInstagram className="cursor-pointer hover:text-[#04D78D]" />
@@ -467,9 +476,22 @@ export default function AboutPage() {
                 <FaFacebookF className="cursor-pointer hover:text-[#04D78D]" />
               </a>
 
+              <a href="https://wa.me/917892059939" target="_blank" rel="noopener noreferrer">
+                <FaWhatsapp className="cursor-pointer hover:text-[#04D78D]" />
+              </a>
+
+              {/* <a href="https://twitter.com/yourusername" target="_blank" rel="noopener noreferrer">
+                      <FaTwitter className="cursor-pointer hover:text-[#04D78D]" />
+                    </a> */}
+
               <a href="https://www.linkedin.com/company/spitel/?originalSubdomain=in" target="_blank" rel="noopener noreferrer">
                 <FaLinkedinIn className="cursor-pointer hover:text-[#04D78D]" />
               </a>
+
+              {/* <a href="https://t.me/yourusername" target="_blank" rel="noopener noreferrer">
+                      <FaTelegramPlane className="cursor-pointer hover:text-[#04D78D]" />
+                    </a> */}
+
             </div>
           </div>
         </div>

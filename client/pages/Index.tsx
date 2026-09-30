@@ -476,7 +476,7 @@ export default function Index() {
             {/* CENTER CONTENT */}
             <div className="md:col-span-6 text-center -mt-4 md:-mt-20 ml-4 md:ml-4 mr-4 md:mr-0">
 
-              <h1 className="text-[48px] sm:text-[58px] md:text-[89px] font-montserrat font-bold text-white leading-snug md:leading-tight opacity-0 animate-heroPopUltra">
+              <h1 className="text-[48px] sm:text-[58px] md:text-[87px] font-montserrat font-bold text-white leading-snug md:leading-tight opacity-0 animate-heroPopUltra">
                 <span className="block">Expand Your</span>
                 <span className="block -ml-0 md:-ml-10 -mt-3 md:-mt-6">
                   Social{" "}
@@ -525,36 +525,32 @@ export default function Index() {
               <p className="text-[#B1B1B1] text-[16px] md:text-[20px] ml-32 md:ml-0 font-regular font-montserrat mt-4 mr-0 md:mr-2 opacity-0 animate-fadeRight [animation-delay:0.55s]">
                 300+ Clients <br /> Reviews
               </p>
-
             </div>
-
           </div>
-
         </div>
+
         {/* BLEND TO NEXT SECTION */}
         <div className="pointer-events-none absolute bottom-0 left-0 w-full h-20 bg-gradient-to-b from-transparent via-black/40 to-black" />
       </section>
 
       {/* ================= BRAND SERVICES SECTION ================= */}
-      <section
+      {/* <section
         ref={sectionRef}
         className="relative w-full py-14 md:py-20 bg-black overflow-hidden"
       >
-        {/* TOP BLEND OVERLAY */}
+        
         <div className="absolute top-0 left-0 w-full h-80 bg-gradient-to-t from-transparent via-black/10 to-black z-20" />
 
-        {/* BACKGROUND IMAGE */}
+       
         <div
           className="absolute inset-0 bg-cover bg-center opacity-60 z-0"
           style={{ backgroundImage: "url('/grow-bg.jpg')" }}
         />
 
         <div className="absolute inset-0 bg-black/20" />
+   
+        <div className="relative z-50 max-w-8xl mx-auto px-6 ml-0 md:ml-40 mr-4 md:-mr-20">
 
-        {/* CONTENT */}
-        <div className="relative z-10 max-w-8xl mx-auto px-6 ml-0 md:ml-40 mr-4 md:-mr-20 relative z-50">
-
-          {/* HEADING */}
           <h2
             className={`text-center ml-2 md:ml-0 mr-0 md:mr-44 text-[#FFFFFF] 
             text-[38px] md:text-[59px] 
@@ -569,10 +565,8 @@ export default function Index() {
             </span>
           </h2>
 
-          {/* CARDS */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-20 ml-4 md:ml-0">
 
-            {/* LEFT CARD */}
             <div
               className={`relative rounded-[12px] overflow-hidden
               w-full md:w-[700px] h-[250px] md:h-[400px] ml-0 md:-ml-16
@@ -586,7 +580,6 @@ export default function Index() {
               />
             </div>
 
-            {/* RIGHT CARD */}
             <div
               className={`relative rounded-[12px] overflow-hidden
               w-full md:w-[560px] h-[250px] md:h-[400px] ml-0 md:-ml-20
@@ -599,18 +592,16 @@ export default function Index() {
                 className="absolute inset-0 w-full h-full object-cover opacity-95"
               />
             </div>
-
           </div>
         </div>
 
-        {/* BLEND TO NEXT SECTION */}
         <div className="pointer-events-none absolute bottom-0 left-0 w-full h-40 bg-gradient-to-b from-transparent via-black/40 to-black" />
-      </section>
+      </section> */}
 
       {/* ================= WHAT WE DO SECTION ================= */}
       <section
         ref={section2Ref}
-        className="relative w-full py-6 md:py-28 overflow-hidden"
+        className="relative w-full mt-16 mb-6 md:py-28 overflow-hidden"
       >
 
         {/* TOP BLEND OVERLAY */}
@@ -619,7 +610,7 @@ export default function Index() {
         {/* BACKGROUND IMAGE */}
         <div
           className="absolute inset-0 bg-cover bg-center opacity-20 z-0"
-          style={{ backgroundImage: "url('/hero-bg.jpg')" }}
+          style={{ backgroundImage: "url('/brand-bg.jpg')" }}
         />
 
         <div className="relative z-30 max-w-7xl mx-auto px-6 md:px-12">
@@ -645,7 +636,7 @@ export default function Index() {
             className={`
               grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 
               gap-x-6 md:gap-x-10 ml-4 md:ml-0 mr-4 md:mr-0
-              gap-y-14 md:gap-y-20
+              gap-y-10 md:gap-y-20
               transition-all duration-1000 ease-out delay-300
               ${showSection2
                 ? "opacity-100 translate-y-0"
@@ -702,7 +693,7 @@ export default function Index() {
       {/* WORK + AI VIDEOS SECTION */}
       <section
         ref={sectionRef3Ref}
-        className="relative w-full bg-black lg:mr-16 px-6 md:px-12 lg:px-20 py-20 text-white overflow-hidden"
+        className="relative w-full bg-black lg:mr-16 px-6 md:px-12 lg:px-24 py-20 text-white overflow-hidden"
       >
 
         {/* ================= TOP ROW ================= */}
@@ -712,7 +703,7 @@ export default function Index() {
           <div
             className={`
               gap-5 -mt-2 flex items-center
-              ml-4 sm:ml-6 md:ml-10 lg:ml-10
+             
               ${sectionRef3 ? "animate-slideInLeft" : "opacity-0"}
             `}
           >
@@ -745,21 +736,20 @@ export default function Index() {
             ${sectionRef3 ? "animate-slideRightFade" : "opacity-0"}`}
           >
             A complete digital project covering logo design, branding, UI/UX,
-            <br className="hidden lg:block" />
+            {/* <br className="hidden lg:block" /> */}
             web & mobile, AI video content, and targeted marketing. Built to
-            <br className="hidden lg:block" />
+            {/* <br className="hidden lg:block" /> */}
             create impact, consistency, and measurable results.
           </p>
         </div>
 
         {/* ================= CONTENT GRID ================= */}
-        <div className="ml-4 md:ml-0 mr-4 md:mr-0 mt-16 lg:mt-24 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+        <div className="ml-4 md:ml-0 mr-4 md:mr-0 mt-16 lg:mt-24 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-22 items-center">
 
           {/* LEFT — VIDEO GRID */}
           <div
             className={`
               grid grid-cols-1 sm:grid-cols-2 gap-4
-              ml-0 sm:ml-6 md:ml-10 lg:ml-10
               ${sectionRef3 ? "animate-zoomIn" : "opacity-0"}
             `}
           >
@@ -795,12 +785,18 @@ export default function Index() {
           >
             <h3 className="text-[38px] sm:text-[42px] lg:text-[59px] font-bold mb-6 flex items-center -mt-10 md:-mt-0 ml-0 lg:ml-2">
               AI Videos
-              <img src="/video1.png" className="w-[45px] h-[45px] lg:w-[65px] lg:h-[62px] lg:ml-10" />
+              <img src="/video1.png" className="w-[45px] h-[45px] lg:w-[65px] lg:h-[62px] lg:ml-10 ml-6" />
             </h3>
 
-            <p className="text-[#B1B1B1] mb-8 lg:mb-10 text-[16px] lg:text-[18px] leading-relaxed ml-0 lg:ml-2 font-montserrat font-regular">
+            <p className="hidden md:block text-[#B1B1B1] mb-8 lg:mb-10 text-[16px] lg:text-[18px] leading-relaxed ml-0 lg:ml-2 font-montserrat font-regular">
               We create AI-powered videos tailored to your brand <br />
               and message. Designed to capture attention, <br />
+              explain ideas, and boost engagement.
+            </p>
+
+            <p className="md:hidden text-[#B1B1B1] mb-8 lg:mb-10 text-[16px] lg:text-[18px] leading-relaxed ml-0 lg:ml-2 font-montserrat font-regular">
+              We create AI-powered videos tailored to your brand
+              and message. Designed to capture attention,
               explain ideas, and boost engagement.
             </p>
 
@@ -869,7 +865,7 @@ export default function Index() {
           </p>
 
           {/* CARDS */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-14 md:gap-12 ml-4 md:ml-24 mr-4 md:mr-16 justify-items-center">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-14 md:gap-20 ml-4 md:ml-24 mr-4 md:mr-16 justify-items-center">
 
             {/* CARD 1 */}
             <div className="group text-center">
@@ -975,7 +971,7 @@ export default function Index() {
             </h2>
 
             <p
-              className={`text-[#B1B1B1] text-[16px] md:text-[20px] font-montserrat text-start mb-10 leading-relaxed relative z-30
+              className={`text-[#B1B1B1] text-[16px] md:text-[17px] font-montserrat text-start mb-10 leading-relaxed relative z-30
               ${showSection5 ? "animate-slideLeftFade [animation-delay:0.4s]" : ""}`}
             >
               Creative visuals crafted to communicate, <br className="hidden md:block" />
@@ -998,9 +994,9 @@ export default function Index() {
           {/* ================= RIGHT ================= */}
           <div
             className={`relative flex items-center justify-center md:justify-end z-30
-            h-[400px] md:h-[600px]
+            h-[400px] md:h-[550px]
             mt-16 md:mt-0
-            mr-0 md:mr-44
+            mr-0 md:mr-40
             ${showSection5 ? "animate-slideInTogether" : "opacity-0"}`}
           > {/* desktop same */}
 
@@ -1148,16 +1144,16 @@ export default function Index() {
 
             <div className="relative rounded-[10px] overflow-hidden group cursor-pointer">
               <a
-                href="https://panoplyindustries.in/"
+                href="https://Unicraft.store/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="relative block rounded-[10px] overflow-hidden group cursor-pointer"
               >
                 {/* IMAGE */}
                 <img
-                  src="/web2.png"
+                  src="/web-image1.jpg"
                   alt="UI Project 1"
-                  className="w-full h-[200px] md:h-[372px] object-cover transition duration-500"
+                  className="w-full h-[200px] md:h-[322px] object-cover transition duration-500"
                 />
 
                 {/* DARK OVERLAY */}
@@ -1174,16 +1170,16 @@ export default function Index() {
 
             <div className="relative rounded-[10px] overflow-hidden group cursor-pointer">
               <a
-                href="https://panoplyindustries.in/"
+                href="https://shreendaarchitects.com/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="relative block rounded-[10px] overflow-hidden group cursor-pointer"
               >
                 {/* IMAGE */}
                 <img
-                  src="/home-ui-ux(3).png"
+                  src="/web-image2.jpg"
                   alt="UI Project 1"
-                  className="w-full h-[200px] md:h-[372px] transition duration-500"
+                  className="w-full h-[200px] md:h-full transition duration-500"
                 />
 
                 {/* DARK OVERLAY */}
@@ -1200,16 +1196,16 @@ export default function Index() {
 
             <div className="relative rounded-[10px] overflow-hidden group cursor-pointer">
               <a
-                href="https://panoplyindustries.in/"
+                href="https://wandg.in/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="relative block rounded-[10px] overflow-hidden group cursor-pointer"
               >
                 {/* IMAGE */}
                 <img
-                  src="/home-ui-ux(2).png"
+                  src="/web-image3.jpg"
                   alt="UI Project 1"
-                  className="w-full h-[200px] md:h-[372px] transition duration-500"
+                  className="w-full h-[200px] md:h-full transition duration-500"
                 />
 
                 {/* DARK OVERLAY */}
@@ -1245,12 +1241,12 @@ export default function Index() {
         <div className="relative z-30 grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-center">
 
           {/* LEFT CONTENT */}
-          <div className="text-white ml-0 md:ml-10 mt-8 text-center md:text-left">
+          <div className="text-white ml-4 md:ml-10 mt-8 text-left md:text-left">
 
             {/* HEADING */}
             <h2
               className={`text-[38px] md:text-[59px] font-montserrat font-bold 
-                mb-8 md:mb-10 mr-28 ml-4 md:ml-0
+                mb-8 md:mb-10 
                 md:whitespace-nowrap
                 ${showSection7 ? "opacity-100 animate-slideInLeft" : "opacity-0"}`}
             >
@@ -1259,7 +1255,7 @@ export default function Index() {
 
             {/* GREEN SUB TEXT */}
             <p
-              className={`text-[#04D78D] text-[16px] md:text-[26px] md:leading-[1.3] font-montserrat font-medium ml-4 md:ml-0 mr-20 mb-8 md:mb-10 max-w-2xl mx-auto md:mx-0
+              className={`text-[#04D78D] text-[16px] md:text-[26px] md:leading-[1.3] font-montserrat font-medium mr-20 mb-8 md:mb-10 max-w-2xl mx-auto md:mx-0
               ${showSection7 ? "opacity-100 animate-slideInLeft" : "opacity-0"}`}
               style={{ animationDelay: "0.15s" }}
             >
@@ -1268,15 +1264,15 @@ export default function Index() {
             </p>
 
             {/* BULLET POINTS */}
-            <div className="ml-4 md:ml-0 grid grid-cols-1 md:grid-cols-2 gap-y-6 md:gap-x-18 md:gap-y-5 text-white text-[16px] md:text-[18px] font-montserrat font-regular text-left">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-y-6 md:gap-x-18 md:gap-y-5 text-white text-[16px] md:text-[17px] font-montserrat font-regular text-left">
 
-              <ul className="space-y-5 md:space-y-8 list-disc list-inside">
+              <ul className="space-y-5 md:space-y-6 list-disc list-inside">
                 <li className="whitespace-nowrap">Broadcast promotional messages</li>
                 <li className="whitespace-nowrap">Automated replies and follow-ups</li>
                 <li className="whitespace-nowrap">Click-to-WhatsApp ads</li>
               </ul>
 
-              <ul className="space-y-5 md:space-y-8 list-disc list-inside md:ml-20">
+              <ul className="space-y-5 md:space-y-6 list-disc list-inside md:ml-16">
                 <li className="whitespace-nowrap">Share offers and updates</li>
                 <li className="whitespace-nowrap">Send images, videos, and catalogs</li>
                 <li className="whitespace-nowrap">Instant customer support</li>
@@ -1295,8 +1291,8 @@ export default function Index() {
                 px-6 py-3 rounded-full border-[3px] border-[#04D78D]
                 text-[#04D78D] text-[16px] lg:text-[16px]
                 font-montserrat font-medium 
-                -ml-36 lg:ml-0 md:mt-12 mt-8
-                bg-transparent
+                md:mt-10 mt-8
+                bg-transparent 
                 opacity-0 hover:underline
                 animate-fadeLeftGlow
                 [animation-delay:0.85s]
@@ -1309,18 +1305,18 @@ export default function Index() {
           </div>
 
           {/* RIGHT IMAGE */}
-          <div className={`flex justify-center md:justify-end md:mt-40 mt-4 md:mr-10 
+          <div className={`flex justify-center md:justify-end md:mt-40 mt-4 md:mr-6
             ${showSection7 ? "animate-slideRightFade" : "opacity-0"}`}>
-            <a href="/connect.MP4" target="_blank">
-              <video
-                src="https://res.cloudinary.com/dnrpf4rsx/video/upload/v1774606584/connect_y7t4yk.mov"
-                autoPlay
-                loop
-                muted
-                playsInline
-                className="w-full md:w-[500px] h-[350px] object-cover transition-transform duration-500 cursor-pointer rounded-2xl"
-              />
-            </a>
+            {/* <a href="/connect.MP4" target="_blank"> */}
+            <video
+              src="https://res.cloudinary.com/dnrpf4rsx/video/upload/v1774606584/connect_y7t4yk.mov"
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="w-full md:w-[500px] h-[350px] object-cover transition-transform duration-500 cursor-pointer rounded-2xl"
+            />
+            {/* </a> */}
           </div>
 
         </div>
@@ -1351,7 +1347,7 @@ export default function Index() {
         <div className="relative max-w-8xl w-full px-4 sm:px-6 md:px-8 grid md:grid-cols-2 gap-10 md:gap-12 items-center">
 
           {/* LEFT IMAGE */}
-          <div className={`flex justify-center hidden md:block ${showSection10 ? "animate-slideLeftFade" : "opacity-0"}`}>
+          <div className={`md:flex justify-center hidden ${showSection10 ? "animate-slideLeftFade" : "opacity-0"}`}>
             <img
               src="/bidding.png"
               alt="Auction"
@@ -1805,7 +1801,7 @@ export default function Index() {
           </div>
 
           {/* Address */}
-          <div className="text-center md:text-left">
+          <div className="text-center md:text-left md:-ml-12">
             <h4 className="text-[#FFFFFF] font-montserrat font-medium text-[16px] mb-6 md:mb-8">
               Address
             </h4>
@@ -1856,17 +1852,17 @@ export default function Index() {
                 <FaWhatsapp className="cursor-pointer hover:text-[#04D78D]" />
               </a>
 
-              <a href="https://twitter.com/yourusername" target="_blank" rel="noopener noreferrer">
+              {/* <a href="https://twitter.com/yourusername" target="_blank" rel="noopener noreferrer">
                 <FaTwitter className="cursor-pointer hover:text-[#04D78D]" />
-              </a>
+              </a> */}
 
               <a href="https://www.linkedin.com/company/spitel/?originalSubdomain=in" target="_blank" rel="noopener noreferrer">
-                <FaLinkedinIn className="cursor-pointer md:ml-16 hover:text-[#04D78D]" />
+                <FaLinkedinIn className="cursor-pointer hover:text-[#04D78D]" />
               </a>
 
-              <a href="https://t.me/yourusername" target="_blank" rel="noopener noreferrer">
+              {/* <a href="https://t.me/yourusername" target="_blank" rel="noopener noreferrer">
                 <FaTelegramPlane className="cursor-pointer hover:text-[#04D78D]" />
-              </a>
+              </a> */}
 
             </div>
           </div>

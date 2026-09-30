@@ -4,6 +4,7 @@ import { FaBars, FaTimes } from "react-icons/fa";
 import {
   FaInstagram,
   FaFacebookF,
+  FaWhatsapp,
   FaLinkedinIn,
 } from "react-icons/fa";
 export default function Blog() {
@@ -147,7 +148,7 @@ export default function Blog() {
           <div className="bg-[#111111] shadow-2xl rounded-xl overflow-hidden p-4 animate-fadeUp md:ml-12">
 
             <img
-              src="/web-hosting.jpg"
+              src="/web-hosting.png"
               alt="Web Hosting"
               className="w-full h-52 sm:h-60 md:h-64 object-cover rounded-xl"
             />
@@ -180,8 +181,8 @@ export default function Blog() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-black px-6 md:px-16 py-10 md:py-6">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
+      <footer className="bg-black px-6 md:px-16 py-10 md:py-8">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-12 md:mt-14">
 
           {/* Logo + Tagline */}
           <div className="text-center md:text-left">
@@ -193,7 +194,7 @@ export default function Blog() {
               />
             </a>
             <p className="text-[#8D8D8D] text-[15px] md:text-[16px] font-montserrat leading-relaxed 
-                  mx-auto md:ml-16 md:-mt-4">
+                                    mx-auto md:ml-16 md:-mt-4">
               Crafting impactful digital<br />
               brand experiences.
             </p>
@@ -229,7 +230,7 @@ export default function Blog() {
           </div>
 
           {/* Address */}
-          <div className="text-center md:text-left">
+          <div className="text-center md:text-left md:-ml-12">
             <h4 className="text-[#FFFFFF] font-montserrat font-medium text-[16px] mb-6 md:mb-8">
               Address
             </h4>
@@ -266,7 +267,7 @@ export default function Blog() {
               Get In Touch With Us
             </h4>
 
-            <div className="flex justify-center md:justify-center md:mr-[120px] flex-wrap gap-6 text-[#D2D2D2] text-[26px] md:text-[30px] max-w-[220px] mx-auto md:mx-0">
+            <div className="flex justify-center md:justify-start flex-wrap gap-6 text-[#D2D2D2] text-[26px] md:text-[30px] max-w-[220px] mx-auto md:mx-0">
 
               <a href="https://www.instagram.com/spitel_insta/" target="_blank" rel="noopener noreferrer">
                 <FaInstagram className="cursor-pointer hover:text-[#04D78D]" />
@@ -276,9 +277,22 @@ export default function Blog() {
                 <FaFacebookF className="cursor-pointer hover:text-[#04D78D]" />
               </a>
 
+              <a href="https://wa.me/917892059939" target="_blank" rel="noopener noreferrer">
+                <FaWhatsapp className="cursor-pointer hover:text-[#04D78D]" />
+              </a>
+
+              {/* <a href="https://twitter.com/yourusername" target="_blank" rel="noopener noreferrer">
+                                        <FaTwitter className="cursor-pointer hover:text-[#04D78D]" />
+                                      </a> */}
+
               <a href="https://www.linkedin.com/company/spitel/?originalSubdomain=in" target="_blank" rel="noopener noreferrer">
                 <FaLinkedinIn className="cursor-pointer hover:text-[#04D78D]" />
               </a>
+
+              {/* <a href="https://t.me/yourusername" target="_blank" rel="noopener noreferrer">
+                                        <FaTelegramPlane className="cursor-pointer hover:text-[#04D78D]" />
+                                      </a> */}
+
             </div>
           </div>
         </div>
